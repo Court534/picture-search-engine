@@ -1,7 +1,13 @@
+import ImageShow from "./ImageShow";
+
 function ImageList({ images }) {
+  const renderedImages = images.map((image) => {
+    return <ImageShow image={image} />;
+  });
+
   return (
-    <div className="ImageList">
-      Image List: {images.length}
+    <div>
+      {renderedImages}
     </div>
   );
 }

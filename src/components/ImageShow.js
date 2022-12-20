@@ -1,7 +1,7 @@
-function ImageShow() {
+function ImageShow({ image }) {
   return (
-    <div className="ImageShow">
-      <h1>My React ImageShow</h1>
+    <div>
+      {image.id}
     </div>
   );
 }
