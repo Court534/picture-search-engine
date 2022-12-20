@@ -1,10 +1,11 @@
-function SearchBar() {
-  return (
-    <div className="SearchBar">
-      <h1>My React SearchBar</h1>
-      <p>Welcome!</p>
-    </div>
-  );
+function SearchBar({ onSubmit }) {
+  const handleClick = () => {
+  }
+
+  return <div>
+    <input />
+    <button onClick={handleClick}>Click me!</button>
+  </div>
 }
 
 export default SearchBar;
