@@ -1,10 +1,11 @@
 import SearchBar from "./components/SearchBar";
+import SearchImages from "./api";
 
 function App() {
   const handleSubmit = (term) => {
-    console.log('Do a search with term: ', term);
+    SearchImages(term);
   }
-  
+
   return (
     <div>
       <SearchBar onSubmit={handleSubmit} />
