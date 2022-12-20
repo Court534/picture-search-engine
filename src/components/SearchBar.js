@@ -10,7 +10,7 @@ function SearchBar({ onSubmit }) {
   };
 
   const handleChange = (event) => {
-    console.log(event.target.value);
+    setTerm(event.target.value);
   };
 
   return (
