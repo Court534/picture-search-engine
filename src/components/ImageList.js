@@ -1,7 +1,7 @@
-function ImageList() {
+function ImageList({ images }) {
   return (
     <div className="ImageList">
-      <h1>My React ImageList</h1>
+      Image List: {images.length}
     </div>
   );
 }
