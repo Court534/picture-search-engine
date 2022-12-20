@@ -1,6 +1,8 @@
-function SearchBar() {
-  const handleFormSubmit = () => {
-    console.log('Form submitted');
+function SearchBar({ onSubmit }) {
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    onSubmit('Cats')
   };
 
   return (
